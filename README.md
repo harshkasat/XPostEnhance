@@ -14,7 +14,7 @@ XPostEnhance is a Chrome extension designed to help you craft better tweets.  It
 
 Watch our product demo to see XPostEnhance in action:
 
-https://github.com/harshkasat/XPostEnhance/blob/main/assets/product-demo.mkv
+[https://github.com/harshkasat/XPostEnhance/blob/main/assets/product-demo.mkv](https://github.com/user-attachments/assets/732a78c6-7c7c-40a2-a0f8-39be8ce45911)
 
 ## Table of Contents
 

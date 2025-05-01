@@ -10,11 +10,18 @@
 
 XPostEnhance is a Chrome extension designed to help you craft better tweets.  It leverages the power of Google Gemini's large language model to analyze and improve your text before you post it. The extension aims to make your tweets sound more natural and engaging, while maintaining a conversational tone.  It's particularly useful for those who want to refine their tweets for clarity and impact.
 
+## Demo
+
+Watch our product demo to see XPostEnhance in action:
+
+https://github.com/harshkasat/XPostEnhance/blob/main/assets/product-demo.mkv
+
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Demo](#demo)
 * [License](#license)
 
 

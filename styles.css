@@ -1,137 +1,116 @@
-/* styles.css */
 .twitter-improver-button {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  background-color: white;
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
   border-radius: 50%;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   z-index: 9999;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .twitter-improver-button:hover {
   transform: scale(1.1);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .twitter-improver-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.twitter-improver-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .twitter-improver-popup {
   position: absolute;
-  width: 300px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 340px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
   z-index: 10000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Inter", "Segoe UI", sans-serif;
   overflow: hidden;
 }
 
 .twitter-improver-popup-header {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
-  background-color: #1DA1F2;
-  color: white;
-}
-
-.twitter-improver-popup-title {
-  font-weight: 600;
-  font-size: 14px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .twitter-improver-popup-close {
   background: none;
   border: none;
-  color: white;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
-  padding: 0;
+  color: #fff;
   line-height: 1;
 }
 
 .twitter-improver-popup-content {
-  padding: 15px;
-}
-
-.twitter-improver-loading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 0;
-  color: #657786;
-}
-
-.twitter-improver-spinner {
-  width: 24px;
-  height: 24px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #1DA1F2;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-bottom: 10px;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.twitter-improver-suggestion-content h4 {
-  margin: 0 0 10px 0;
+  padding: 20px 16px 16px;
+  color: #222;
   font-size: 14px;
-  color: black;
 }
 
 .twitter-improver-suggested-text {
-  margin: 0 0 15px 0;
-  padding: 10px;
-  background-color: #f8f9fa;
-  color: black;
-  border-radius: 8px;
+  background-color: #f2f4f7;
+  border-radius: 12px;
+  padding: 12px 14px;
   font-size: 14px;
-  line-height: 1.4;
-  border-left: 3px solid #1DA1F2;
+  line-height: 1.5;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #1da1f2;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  color: #111;
 }
 
 .twitter-improver-apply {
-  background-color: #1DA1F2;
+  display: inline-block;
+  background-color: #1da1f2;
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
   cursor: pointer;
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 500;
   transition: background-color 0.2s ease;
 }
 
 .twitter-improver-apply:hover {
-  background-color: #0c85d0;
-}
-
-/* Animation for analyzing state */
-.twitter-improver-analyzing {
-  position: relative;
+  background-color: #1681c9;
 }
 
 .twitter-improver-analyzing::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
   border-radius: 50%;
   top: -3px;
   right: -3px;
@@ -139,7 +118,16 @@
 }
 
 @keyframes pulse {
-  0% { transform: scale(0.8); opacity: 1; }
-  50% { transform: scale(1.2); opacity: 0.7; }
-  100% { transform: scale(0.8); opacity: 1; }
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
 }
